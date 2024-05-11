@@ -12,6 +12,7 @@ using namespace std;
 
 int main() {
 	setlocale(LC_ALL, "Rus");
+	system("chcp 1251");
 	TSortedArray A(5);
 
 	A.Add();
