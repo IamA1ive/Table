@@ -1,12 +1,13 @@
 #pragma once
 #include <iostream>
 #include "TNode.h"
+#include "TListNode.h"
 using namespace std;
 
 class TList {
 	int max;
 	int count;
-	TNode* pFirst;
+	TListNode* pFirst;
 public:
 	TList();
 	TList(int _max);
