@@ -128,12 +128,16 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="TArray.h" />
+    <ClInclude Include="TList.h" />
+    <ClInclude Include="TListNode.h" />
     <ClInclude Include="TNode.h" />
     <ClInclude Include="TSortedArray.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source.cpp" />
     <ClCompile Include="TArray.cpp" />
+    <ClCompile Include="TList.cpp" />
+    <ClCompile Include="TListNode.cpp" />
     <ClCompile Include="TNode.cpp" />
     <ClCompile Include="TSortedArray.cpp" />
   </ItemGroup>

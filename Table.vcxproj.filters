@@ -24,6 +24,12 @@
     <ClInclude Include="TSortedArray.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
+    <ClInclude Include="TList.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="TListNode.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="TNode.cpp">
@@ -36,6 +42,12 @@
       <Filter>Исходные файлы</Filter>
     </ClCompile>
     <ClCompile Include="TSortedArray.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="TList.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="TListNode.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>

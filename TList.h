@@ -3,18 +3,17 @@
 #include "TNode.h"
 using namespace std;
 
-class TSortedArray {
+class TList {
 	int max;
 	int count;
-	TNode* array;
+	TNode* pFirst;
 public:
-	TSortedArray();
-	TSortedArray(int _max);
+	TList();
+	TList(int _max);
 	void Add();
 	void Print();
 	bool IsFull();
 	bool IsEmpty();
-	int BinSearch(string s);
+	int Find(string s);
 	void Delete(string s);
-	void Sort();
 };

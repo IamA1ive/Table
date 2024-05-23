@@ -2,11 +2,12 @@
 #include <string>
 using namespace std;
 
-class TNode {
+class TListNode {
 	string key;
 	int value;
+	TListNode* pNext;
 public:
-	TNode();
-	friend class TArray;
-	friend class TSortedArray;
+	TListNode();
+	friend class TList;
 };
+
