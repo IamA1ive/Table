@@ -3,23 +3,23 @@
 //сдюкемхе дкъ бяеу рюакхж
 //пюглеп рюакхж лнфер ашрэ пюгмшл, рн еярэ
 //б ндмс рюакхжс гюохяэ лнфер оноюярэ, ю б дпсцсч мер
+#include "TArray.h"
+#include "TList.h"
+#include "TListNode.h"
+#include "TNode.h"
+#include "TSortedArray.h"
 #include <iostream>
 #include <locale.h>
-#include "TNode.h"
-#include "TArray.h"
-#include "TSortedArray.h"
 using namespace std;
 
 int main() {
 	setlocale(LC_ALL, "Rus");
-	TSortedArray A(5);
+	TList A(3);
+
+	cout << A.IsEmpty();
 
 	A.Add();
-
-
-	A.BinSearch("Anna");
-	A.Delete("Bob");
-	A.Print();
-
+	cout << A.IsEmpty();
+	cout << A.IsFull();
 	return 0;
 }
