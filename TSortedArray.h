@@ -2,7 +2,6 @@
 #include <iostream>
 #include "TNode.h"
 using namespace std;
-
 class TSortedArray {
 	int max;
 	int count;
@@ -10,7 +9,7 @@ class TSortedArray {
 public:
 	TSortedArray();
 	TSortedArray(int _max);
-	void Add();
+	void Add(string _key);
 	void Print();
 	bool IsFull();
 	bool IsEmpty();

@@ -10,10 +10,11 @@ class TList {
 public:
 	TList();
 	TList(int _max);
-	void Add();
+	void Add(string _key);
 	void Print();
 	bool IsFull();
 	bool IsEmpty();
-	int Find(string s);
-	void Delete(string s);
+	bool Find(string _key);
+	void Delete(string _key);
 };
+

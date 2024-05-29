@@ -22,10 +22,8 @@ void TSortedArray::Sort() {
 		}
 	}
 }
-void TSortedArray::Add() {
-	string _key;
-	cout << "Введите ключи для добавления в таблицу\nЧтобы выйти - нажмите CTRL+Z" << endl;
-	while (count < max && cin >> _key) {
+void TSortedArray::Add(string _key) {
+	if (count < max || BinSearch(_key) >= 0) {
 		int answer = 0;
 		for (int i = 0; i < count; ++i) {
 			if (array[i].key == _key) {
@@ -39,10 +37,12 @@ void TSortedArray::Add() {
 			array[count].value = 1;
 			count++;
 		}
+		Sort();
 	}
-	Sort();
+	else cout << "Отсортированная таблица заполнена." << endl;
 }
 void TSortedArray::Print() {
+	cout << endl << "Отсортированная таблица:" << endl;
 	for (int i = 0; i < count; ++i) {
 		cout << array[i].key << '\t' << array[i].value << endl;
 	}
@@ -63,7 +63,7 @@ int TSortedArray::BinSearch(string s) {
 		else if (array[middle].key > s) right = middle - 1;
 		else {
 			answer = 1;
-			cout << "Ключ '" << array[middle].key << "' найден в таблице со значением " << array[middle].value << endl;
+			cout << "Ключ '" << array[middle].key << "' найден в отсортированной таблице со значением " << array[middle].value << endl;
 			break;
 		}
 	}

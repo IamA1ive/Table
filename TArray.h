@@ -9,7 +9,7 @@ class TArray {
 public:
 	TArray();
 	TArray(int _max);
-	void Add();
+	void Add(string _key);
 	void Print();
 	bool IsFull();
 	bool IsEmpty();

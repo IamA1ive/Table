@@ -10,4 +10,3 @@ public:
 	TListNode();
 	friend class TList;
 };
-

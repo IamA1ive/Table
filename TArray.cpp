@@ -6,10 +6,8 @@ TArray::TArray(int _max) {
 	count = 0;
 	array = new TNode[max];
 }
-void TArray::Add() {
-	string _key;
-	cout << "Введите ключи для добавления в таблицу\nЧтобы выйти - нажмите CTRL+Z" << endl;
-	while (count < max && cin >> _key) {
+void TArray::Add(string _key) {
+	if (count < max || Find(_key) >= 0) {
 		int answer = 0;
 		for (int i = 0; i < count; ++i) {
 			if (array[i].key == _key) {
@@ -24,8 +22,10 @@ void TArray::Add() {
 			count++;
 		}
 	}
+	else cout << "Таблица заполнена." << endl;
 }
 void TArray::Print() {
+	cout << endl << "Таблица:" << endl;
 	for (int i = 0; i < count; ++i) {
 		cout << array[i].key << '\t' << array[i].value << endl;
 	}
